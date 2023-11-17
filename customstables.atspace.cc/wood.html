@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Sign Up Page</title>
+
+
+    </head>
+    <body style>
+        <div class="box">
+            <ul class="logo-signup">
+               <center> © logo 2023-now </center>
+            </ul>
+            <img src="images/logo_transparent.png" alt="logo" class="logo">
+            <p class= "paragraph1-signup">Sign up and start investing <br></p>
+            <p class= "paragraph2-signup">with us!</p>
+        </div>
+            <form  class="form" method="POST" action="signup.php"> 
+                <div id = "center">  
+                <center>
+                    <h1 id="title">Sign Up</h1>
+                
+                    <?php
+                    if($error){
+                        echo "<font color=red>" . $error_message . "</font>";
+                    }
+                    if($dberror){
+                        echo "<font color=red>" . $dberror_message . "</font>";
+                    }
+                    if($record_insert){
+                        echo "<font>" . $insert_message . "</font>";
+                    }
+                    ?>
+                    <div class="input-container-signup">
+                      
+                        <input type="text" name="username" value="<?=$usernameD?>" placeholder="Username"><br><br>
+                        
+                        <input type="text" name="password" value="<?=$passwordD?>" placeholder="Password"><br><br>
+                       
+                        <input type="text" name="email" value="<?=$email?>" placeholder="Email"><br><br>
+                        <input class="submit" type="submit" name="Create" value="Sign Up" class="submit-signup"><br><br>
+                        Already have an account! <a href="login.php?stock_symbol=economy">Login here!</a>
+                    </div>
+                </center>
+                </div>
+            </form>
+        </div>   
+    
+    </body>
+</html>
+
+<style>
+      
+        body{
+           background-image: url('images/pattern2.avif'); ;
+        }
+        .box{
+            background-image: url('images/pattern2.avif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+            background-color: white;
+            width: 65%;
+            height: 99%;
+            margin-left: auto;
+            margin-right: auto;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            border-radius: 15px;
+        }
+        .form{
+            position: absolute;
+            bottom: 2;
+            right: 341;
+            width: 34%;
+            height: 97.2%;
+            background-color: white;
+            border-radius: 0 15px 15px 0px;
+            
+            
+        }
+        .submit{
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .nav{
+        
+        }
+        #center{
+            margin-top: 260;
+        }
+        #title{
+            font-family: 'Golos Text', sans-serif;
+            font-size: 46px;
+            font-weight: bold;
+        }
+        .logo{
+            height: 160px;
+            background-color: none;
+        }
+        .paragraph1-signup{
+            
+            color: white;
+            font-size: 40px;
+            margin-left: 75;
+            margin-top: 200;
+        }
+        .paragraph2-signup{
+            color: white;
+            font-size: 40px;
+            margin-left: 215;
+        }
+        ul.logo-signup {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            height: 25;
+            overflow: hidden;
+            position: fixed;
+            bottom: 14;
+            width: 30.5%;
+            color:white;
+        }
+        .input-container-signup>input{
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 2.5px;
+            border: 1px solid whitesmoke;
+            border-radius: 5px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    input.submit-signup {
+       margin: 2.5px;
+       padding: 5px;
+       border: none;
+       text-decoration: none;
+       cursor: pointer;
+       text-align: center;
+       filter: 0;
+   }
+   @media (max-width: 900px) {
+    body{
+        background-image: url('images/pattern2.avif');
+    }
+    .box{
+            background-image: none;
+        }
+        .paragraph1-signup{
+            display: none;
+        }
+        .paragraph2-signup{
+           display: none;
+        }
+        .form{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .center{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+    }
+     
+</style>

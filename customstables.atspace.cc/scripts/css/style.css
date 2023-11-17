@@ -1,0 +1,125 @@
+body {
+    background-color: red;
+    background-position: center;
+    background-size: 100% auto;
+  }
+
+  ul.ulnav{
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(165, 45, 70);
+  }
+
+  li.linav{
+    float: left;
+  }
+
+  li.linav a{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li.linav a.active{
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li.linav a:hover{
+    background-color: rgb(235, 15, 45);
+  }
+
+  span.subtitle{
+    font-size: 10pt;
+    color: #000000;
+    font-family: verdana;
+  }
+
+  span.maintitle{
+    font-size: 20pt;
+    color: #000000;
+    font-family: verdana;
+  }
+
+  a.nav{
+    font-size: 9pt;
+    color: #000000;
+    font-family: verdana;
+    text-decoration: none;
+  }
+
+  a.nav:hover{
+    font-size: 11pt;
+    color: #000000;
+    font-family: verdana;
+    text-decoration: none;
+  }
+
+  #page_wrapper{
+    border-radius: 5px;
+    border: 2px solid #333333;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    background: rgb(102, 102, 102, 0.85);
+  }
+
+  div.index1{
+    background-color: rgba(220, 0, 0, 0.75);
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  div.index2{
+    background-color: rgba(0, 220, 0, 0.685);
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  div.index3{
+    background-color: rgba(0, 0, 220, 0.75);
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+  }
+
+  div.index4{
+    background-color: rgba(110, 110, 110, 0.925);
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  table.tbl-1{
+    width: 100%;
+    padding: 10px;
+  }
+  
+  td.td-1{
+    width: 25%;
+    padding: 12px;
+  }
+  
+  h1.center{
+    text-align: center;
+  }
+  
+  #spacing{
+    padding-left: 60px;
+    padding-right: 60px;
+    font-family: verdana;
+  }
